@@ -1,120 +1,196 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Phố Cổ Hội An</title>
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, Helvetica, sans-serif;
-            background:#fff8dc;
-        }
-        header{
-            background:#b22222;
-            color:white;
-            text-align:center;
-            padding:15px;
-            font-size:28px;
-            font-weight:bold;
-        }
-        nav{
-            background:#333;
-            padding:10px;
-            text-align:center;
-        }
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 15px;
-            font-weight:bold;
-        }
-        nav a:hover{
-            color:yellow;
-        }
-        .container{
-            padding:20px;
-        }
-        img{
-            max-width:100%;
-            border-radius:10px;
-        }
-        video{
-            width:100%;
-            max-width:700px;
-            border-radius:10px;
-        }
-        audio{
-            width:100%;
-            margin-top:10px;
-        }
-        footer{
-            background:#333;
-            color:white;
-            text-align:center;
-            padding:10px;
-            margin-top:30px;
-        }
-        form{
-            background:#f2f2f2;
-            padding:20px;
-            border-radius:10px;
-            max-width:600px;
-            margin:auto;
-        }
-        input, textarea{
-            width:100%;
-            padding:10px;
-            margin:8px 0;
-        }
-        button{
-            padding:10px 20px;
-            background:#b22222;
-            color:white;
-            border:none;
-            cursor:pointer;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Phố Cổ Hội An</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff8dc;
+}
+
+header{
+    background:#b22222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav{
+    background:#2e8b57;
+    text-align:center;
+    padding:10px;
+}
+nav a{
+    color:yellow;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+}
+nav a:hover{color:white;}
+
+.container{
+    width:95%;
+    margin:20px auto;
+    display:flex;
+    gap:20px;
+}
+
+.left,.right{flex:1;}
+
+.box{
+    background:#fffacd;
+    border:2px solid black;
+    border-radius:8px;
+    padding:15px;
+    margin-bottom:20px;
+}
+
+h2{color:blue;margin-top:0;}
+
+.box img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:6px;
+    margin-top:10px;
+}
+
+video{
+    width:100%;
+    height:260px;
+    border-radius:8px;
+    background:black;
+}
+
+.audio-box{
+    margin-top:12px;
+    padding:12px;
+    background:#f5deb3;
+    border-radius:8px;
+    text-align:center;
+}
+
+.audio-box button{
+    padding:8px 18px;
+    font-weight:bold;
+    border:none;
+    border-radius:6px;
+    background:#2e8b57;
+    color:white;
+    cursor:pointer;
+    margin:5px;
+}
+
+.audio-box button:hover{
+    background:#3cb371;
+}
+
+footer{
+    background:#add8e6;
+    text-align:center;
+    padding:10px;
+    margin-top:20px;
+}
+
+.form-box{
+    width:95%;
+    margin:20px auto;
+    background:#fffacd;
+    border:2px solid black;
+    border-radius:8px;
+    padding:15px;
+}
+
+.form-box input, .form-box textarea{
+    width:100%;
+    padding:8px;
+    margin:6px 0;
+    border-radius:5px;
+    border:1px solid #999;
+}
+.form-box button{
+    padding:10px 20px;
+    border:none;
+    border-radius:6px;
+    background:#b22222;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+.form-box button:hover{
+    background:#dc143c;
+}
+</style>
 </head>
+
 <body>
 
 <header>PHỐ CỔ HỘI AN</header>
 
 <nav>
     <a href="index.html">Trang chủ</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#">Liên hệ</a>
     <a href="about.html">Về chúng tôi</a>
 </nav>
 
 <div class="container">
-    <h2>Giới thiệu</h2>
-    <p>Phố cổ Hội An là di sản văn hóa thế giới, nổi tiếng với kiến trúc cổ kính và nét đẹp truyền thống.</p>
 
-    <h2>Video giới thiệu</h2>
-    <video controls>
-        <source src="Download.mp4" type="video/mp4">
-    </video>
+<div class="left">
+    <div class="box">
+        <h2>Giới thiệu về Phố Cổ Hội An</h2>
+        <p>
+        Phố cổ Hội An thuộc tỉnh Quảng Nam, là di sản văn hóa thế giới được UNESCO công nhận năm 1999.
+        Nơi đây nổi tiếng với kiến trúc cổ kính, đèn lồng rực rỡ và không gian hoài niệm.
+        </p>
+        <img src="https://bizweb.dktcdn.net/100/349/716/files/pho-co-hoi-an-1-1.png?v=1727928153980" alt="Phố cổ Hội An">
+    </div>
 
-    <h2>Nhạc nền Hội An</h2>
-    <audio controls autoplay loop>
-        <source src="nhacnen.mp3" type="audio/mpeg">
-    </audio>
+    <div class="box">
+        <h2>Hình ảnh Phố Cổ Hội An</h2>
+        <img src="https://daivietourist.vn/wp-content/uploads/2025/05/gioi-thieu-ve-pho-co-hoi-an-8.jpg" alt="Hội An về đêm">
+    </div>
+</div>
 
+<div class="right">
+    <div class="box">
+        <h2>Vẻ đẹp Phố Cổ Hội An</h2>
+        <video controls>
+            <source src="Download.mp4" type="video/mp4">
+        </video>
+
+        <div class="audio-box">
+            <h3>🎵 Nhạc nền Hội An</h3>
+            <audio id="bgmusic" controls loop>
+                <source src="nhacnen.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="form-box">
     <h2>Góp ý bài làm</h2>
-    <form>
-        <label>Họ và tên</label>
-        <input type="text" placeholder="Nhập họ và tên">
+    <label>Họ và tên</label>
+    <input type="text" placeholder="Nhập họ và tên">
 
-        <label>Email</label>
-        <input type="email" placeholder="Nhập email">
+    <label>Email</label>
+    <input type="email" placeholder="Nhập email">
 
-        <label>Nội dung góp ý</label>
-        <textarea rows="5" placeholder="Nhập góp ý"></textarea>
+    <label>Nội dung góp ý</label>
+    <textarea rows="4" placeholder="Nhập góp ý của bạn"></textarea>
 
-        <button type="submit">Gửi góp ý</button>
-    </form>
+    <button>Gửi góp ý</button>
 </div>
 
 <footer>
-    © 2026 - Bài thực hành HTML
+© Nhóm/Tác giả: Trần Đức Phát - Bùi Anh Quốc | Lớp 12A1 | Email: demo@gmail.com
 </footer>
 
 </body>
