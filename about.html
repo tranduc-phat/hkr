@@ -1,76 +1,71 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Về Chúng Tôi</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #2bc0e4, #1dbdd6);
-    text-align: center;
-    color: white;
-}
-
-h1 {
-    margin-top: 100px;
-    font-size: 50px;
-}
-
-.container {
-    width: 70%;
-    margin: 50px auto;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 40px;
-    border-radius: 25px;
-    backdrop-filter: blur(10px);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th {
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 15px;
-    font-size: 18px;
-    color: black;
-}
-
-td {
-    padding: 20px;
-    font-size: 18px;
-}
-
-tr:hover {
-    background-color: rgba(255,255,255,0.1);
-}
-</style>
-
+    <meta charset="UTF-8">
+    <title>Về Chúng Tôi</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #26c6da, #00acc1);
+            color:white;
+            text-align:center;
+        }
+        h1{
+            padding:40px 0 20px;
+            font-size:40px;
+        }
+        .box{
+            width:80%;
+            margin:auto;
+            background: rgba(255,255,255,0.2);
+            border-radius:20px;
+            padding:30px;
+        }
+        .row{
+            display:flex;
+            justify-content:space-between;
+            padding:15px 40px;
+            font-size:22px;
+        }
+        .head{
+            background: rgba(255,255,255,0.6);
+            color:black;
+            border-radius:10px;
+            font-weight:bold;
+        }
+        a{
+            display:inline-block;
+            margin-top:30px;
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            border:2px solid white;
+            padding:10px 20px;
+            border-radius:10px;
+        }
+    </style>
 </head>
 <body>
 
 <h1>Về Chúng Tôi</h1>
 
-<div class="container">
-    <table>
-        <tr>
-            <th>HỌ VÀ TÊN</th>
-            <th>LỚP</th>
-        </tr>
-        <tr>
-            <td>Trần Đức Phát</td>
-            <td>12A1</td>
-        </tr>
-        <tr>
-            <td>Bùi Anh Quốc</td>
-            <td>12A1</td>
-        </tr>
-    </table>
+<div class="box">
+    <div class="row head">
+        <div>HỌ VÀ TÊN</div>
+        <div>LỚP</div>
+    </div>
+    <div class="row">
+        <div>Trần Đức Phát</div>
+        <div>12A1</div>
+    </div>
+    <div class="row">
+        <div>Bùi Anh Quốc</div>
+        <div>12A1</div>
+    </div>
 </div>
+
+<a href="index.html">⬅ Quay về trang chủ</a>
 
 </body>
 </html>
-''
